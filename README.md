@@ -3,7 +3,7 @@
 ## Introduction
 
 I written this tool to be able to test several cases during the implementation
-of HTTPS (HTTP/1.1) server running on a embedded target.
+of a HTTPS (HTTP/1.1) server running on a embedded target.
 
 Some embedded targets don't support the default TLS record size of 16 ko, which
 can bring incompatibility problems during the transmission of large data from
