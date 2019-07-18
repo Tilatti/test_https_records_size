@@ -11,12 +11,14 @@ the client to the server (the embedded target).
 There is several solutions:
 * use a custom client (like this tool)
 * use chunked transfer (for example Firefox 65 uses one TLS record per chunk, I didn't verify with other browsers). 
-* use the TLS Record Size Limit (RLS) extension (not implemented by mbedTLS, see https://github.com/ARMmbed/mbedtls/pull/1088)
+* use the TLS Record Size Limit (RLS) extension (not implemented by mbedTLS, see https://github.com/ARMmbed/mbedtls/pull/1088).
+
 This tool helps to investigate the two first solutions, with the following
 features:
 * Upload data (POST requests) with different sizes of TLS records for the transmission. 
 * Upload data (POST requests) with different sizes of chunks.
 * Download data (GET requests) with several requests per TLS connection.
+
 We always consider that one HTTP header can be received inside the TLS records
 accepted by the embbeded target.
 
